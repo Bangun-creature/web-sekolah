@@ -40,7 +40,6 @@ footer h2 {
 }
 
 main {
-  border: 1px solid black;
   height: 90%;
 }
 
@@ -136,7 +135,26 @@ main .main-container .aside-container {
   color: rgba(23, 32, 42, 1);
 }
 
+/* Styling card */
+main .main-container .aside .aside-container .card-download {
+  text-align: center;
+  a {
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+  }
+  background-color: rgba(52, 73, 94, 0.8);
+  cursor: pointer;
+}
+
+main .main-container .aside .aside-container .card-download:hover {
+  background-color: rgba(52, 73, 94, 0.6);
+}
+
 /* Styling Table */
+main .table table {
+  border: 1px solid rgba(52, 73, 94, 0.3);
+}
 
 main .table {
   grid-area: main;
@@ -155,9 +173,14 @@ main .table .table-container {
   height: 100%;
 }
 
+main .table .table-container table tr th {
+  background-color: rgba(52, 73, 94, 0.8);
+  color: #fff;
+}
+
 main .table .table-container table tr td:nth-child(3),
 main .table .table-container table tr td:nth-child(4) {
-  background-color: yellow;
+  background-color: rgb(81, 147, 233);
   text-align: center;
 }
 
@@ -170,11 +193,8 @@ main .table td {
 main .table .table-container,
 main .aside .aside-container {
   padding: 1rem;
-  border: 1px solid blue;
-}
-
-main .table .table-container {
-  /* background-color: aqua; */
+  border: 2px solid rgba(52, 73, 94, 0.2);
+  border-radius: 6px;
 }
 
 main .aside-container {
@@ -188,7 +208,8 @@ main .aside-container {
 main .aside .card-profile,
 main .aside .card-status,
 main .aside .card-download {
-  border: 1px solid orange;
+  border: 1px solid rgba(52, 73, 94, 0.3);
+  border-radius: 6px;
   padding: 0.2rem 1rem;
 }
 
