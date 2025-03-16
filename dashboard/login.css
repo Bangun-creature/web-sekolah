@@ -11,10 +11,12 @@ body {
   height: 100vh;
   justify-content: center;
   align-items: center;
+  background-color: white;
 }
 
 .container {
-  border: 1px solid black;
+  border: 2px solid rgba(52, 73, 94, 0.2);
+  border-radius: 6px;
   width: 70%;
   height: 400px;
   padding: 1rem;
@@ -24,10 +26,13 @@ body {
   align-items: center;
   overflow: hidden;
   justify-items: center;
+  background-color: white;
 }
 
 .login-form {
-  border: 1px solid salmon;
+  border: 1px solid rgba(52, 73, 94, 0.3);
+  border-radius: 6px;
+  padding: 0.2rem 1rem;
   width: 75%;
   height: 200px;
   align-content: center;
@@ -42,8 +47,20 @@ body {
     margin-top: 1rem;
   }
 
+  label {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: rgb(23, 32, 42);
+  }
+
   input {
     padding: 0.4rem;
+    border: 1px solid rgba(52, 73, 94, 0.3);
+    border-radius: 3px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
   }
 
   .button {
@@ -51,12 +68,38 @@ body {
     width: 100%;
     padding: 0.5rem;
     cursor: pointer;
-    background-color: aqua;
+    background-color: rgba(52, 73, 94, 0.6);
+    text-align: center;
+    a {
+      width: 100%;
+      text-decoration: none;
+      color: #fff;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      font-weight: 500;
+      font-size: 1.2rem;
+    }
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
   }
 }
 
 .login-image {
-  border: 1px slolid blue;
   width: 100%;
   overflow: hidden;
+  height: 100%;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .login-image {
+    display: none;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
 }
