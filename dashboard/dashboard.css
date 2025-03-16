@@ -132,10 +132,11 @@ main .main-container h2 {
 main .main-container .table-container,
 main .main-container .aside-container {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-weight: 200;
+  font-weight: 400;
   color: rgba(23, 32, 42, 1);
-  font-size: 1.2rem;
 }
+
+/* Styling Table */
 
 main .table {
   grid-area: main;
